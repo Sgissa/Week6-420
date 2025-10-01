@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Viewer</title>
+    <!-- Tailwind CSS CDN -->
+    <!--
+    It's is utility - first CSS Framework
+    Insgtead of writing custom CSS we can use predefined classes. 
+    
+    -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-grey-100 flex item-center justify-center min-h-screen">
+
+    <div class="bg-white p-6 rounded-xl shadow-lg w-96 text-center">
+        <h1 class="text-3xl font-bold mb-4 text-yellow-600">Pokemon Viewer</h1>
+        <div class="mb-4 flex">
+             <input id="pokemonName" type="text" placeholder="Enter Pokemon Name"
+        class="flex-1 p-2 border border-grey-400 rounded-l-md
+        focus:outline-none focus:ring-2 focus:ring-yellow-400"> 
+
+        <button id="fetchBtn"
+            class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold px-4 rounded-r-md"
+        >Fetch</button>
+
+        
+        </div>
+       
+    <div id="pokemonInfo" class="mt-4 text-right"></div>
+        <!--
+        w-96 - width 24 rem(384px)-->
+    </div>
+
+    <script src="app.js"></script>
+     
+</body>
+</html>
